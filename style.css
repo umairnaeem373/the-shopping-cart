@@ -17,7 +17,6 @@ header {
     border-radius:20px ;
     animation: shadow 2s linear infinite alternate ;
     background: transparent;
-    overflow-x: hidden;
 }
 
 header h1{
@@ -66,6 +65,7 @@ header p{
 }
 
 header>div{
+    margin-right:10px ;
     width:150px ;
     display: flex;
     flex-wrap: wrap;
