@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    /* border: 1px solid; */
+    background-image:url(./Moon.svg)
+}
+
+header {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    position: relative;
+    border-radius:20px ;
+    animation: shadow 2s linear infinite alternate ;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+header h1{
+    color: white;
+    text-shadow:5px red ;
+    background:transparent;
+}
+@keyframes shadow {
+    0%{
+        box-shadow:5px 5px 10px silver ;
+    }
+    100%{
+        box-shadow:-5px -5px 10px silver ;
+    }
+    
+}
+
+header i:hover{
+    cursor: pointer;
+    color:white ;
+}
+
+aside {
+    width: 340px;
+    height: 400px;
+    background: rgba(0, 0, 255, 0.089);
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 1;
+    transform: scaleY(0);
+    overflow-y:auto  ;
+    transition:1s ;
+}
+
+header h2 {
+    box-sizing: border-box;
+    color: silver;
+    font-size:40px ;
+}
+
+
+header p{
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+header>div{
+    width:150px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    position: relative;
+}
+
+.card {
+    border-radius: 15px;
+    border: 1px solid white;
+    height: auto;
+    width: 280px;
+    overflow-x: hidden;
+    background:rgba(245, 245, 245, 0.5);
+    box-shadow:5px 5px 10px gray ;
+}
+
+.card:hover img{
+    transform:scale(1.02) ;
+    cursor: pointer;
+    transition:1s ;
+}
+
+.card img {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    left: 5%;
+    background:transparent
+}
+
+.card h4 {
+    text-align: center;
+    height: 20px;
+    width: 100%;
+    overflow-y: hidden;
+    background:transparent
+}
+
+.card p {
+    text-align: center;
+    background:transparent
+}
+
+.card button {
+    position: relative;
+    left: 30px;
+    top:10px ;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    font-weight: bold;
+    border:1px solid silver ;
+    background-image:linear-gradient(45deg,aliceblue,lightblue,rebeccapurple);
+}
+
+.card button:hover{
+    cursor: pointer;
+    color: white;
+    background-image:linear-gradient(black,black);
+}
+
+.card h3 {
+    padding-left:30px ;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    background:rgba(245, 245, 245, 0.5);
+}
+
+.card i{
+    background:transparent
+}
+
+aside>div {
+    border: 1px solid silver;
+    border-radius:10px ;
+    margin-top:8px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+aside h4 {
+    width: calc(100% - 130px);
+    color:darkslategray;
+    background: transparent;
+}
+
+aside img {
+    height: 50px;
+    width: 50px;
+    border-radius:10px ;
+}
+
+aside button{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: transparent;
+    border:2px solid lightblue ;
+    box-shadow:2px 2px 5px ;
+    font-weight: bold;
+    border-radius:3px ;
+}
+
+aside button:hover{
+    cursor: pointer;
+}
+
+aside p{
+    width: 20px;
+    text-align: center;
+    background: transparent;
+    color: black;
+}
+
+aside h3{
+    background:transparent ;
+}
+
+footer{
+    width:99.5% !important ;
+    margin: auto;
+    margin-top:20px; 
+    width: 100%;
+    height: 100px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px 20px 0px 0px ;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+footer p{
+    background: transparent;
+}
+
+
+
+.showcart {
+    background-color: white;
+    transform: scaleY(1);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius:5px ;
+    transition:1s ;
+
+}
